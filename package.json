@@ -1,0 +1,16 @@
+{
+  "name": "setlist-manager",
+  "version": "0.1.0",
+  "description": "A simple tool to manage set lists",
+  "main": "index.js",
+  "author": "Sam Vevang <sam.vevang@gmail.com>",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "vue.js": "^0.3.2"
+  },
+  "devDependencies": {
+    "webpack": "^4.6.0",
+    "webpack-cli": "^2.1.2"
+  }
+}
