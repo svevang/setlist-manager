@@ -10,9 +10,6 @@
 import Vue from "vue";
 import { CREATE_SONG } from "../mutation-types"
 
-console.log('asdfasdfsadf')
-console.log(CREATE_SONG)
-
 export default {
   data: ()=> {
     return {
@@ -22,7 +19,6 @@ export default {
   methods: {
     createSong () {
       const title = this.songTitle.trim()
-     
       this.$store.commit(CREATE_SONG, title)
     }
   },
