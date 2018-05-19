@@ -1,7 +1,7 @@
 <template>
   <div>
     <h3>Song Creator</h3>
-    <input v-model="songTitle" placeholder="song title" >
+    <input @keyup.enter="createSong" ref="song_input" v-model="songTitle" placeholder="song title" >
     <button v-on:click="createSong">Create</button>
   </div>
 </template>
@@ -20,6 +20,9 @@ export default {
     createSong () {
       const title = this.songTitle.trim()
       this.$store.commit(CREATE_SONG, title)
+      // reset the form field
+      this.songTitle = ''
+      this.$refs.song_input.focus()
     }
   },
 };
