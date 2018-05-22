@@ -1,9 +1,12 @@
 <template>
   <div>
-    <h1>Setlist Manager:</h1>
-    <p><SongCreate/></p>
-    <p><SongList v-bind:songs="songs" /></p>
-
+    <div class="column">
+      Setlist Manager
+      <SongCreate/>
+    </div>
+    <div class="column">
+      <SongList v-bind:songs="songs" />
+    </div>
   </div>
 </template>
 

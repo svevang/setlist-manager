@@ -1,9 +1,11 @@
 <template>
   <div>
     <h4 v-if="songs.length > 0">Song List</h4>
-    <pre v-for="song in songs">
+    <ul>
+      <li v-for="song in songs">
       {{song}}
-    </pre>
+      </li>
+    </ul>
   </div>
 </template>
 
