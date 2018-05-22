@@ -1,7 +1,7 @@
 <template>
   <div>
+      <h3>🎸 Setlist Manager</h3>
     <div class="column">
-      Setlist Manager
       <SongCreate/>
     </div>
     <div class="column">

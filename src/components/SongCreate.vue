@@ -1,6 +1,5 @@
 <template>
   <div>
-    <h3>Song Creator</h3>
     <input @keyup.enter="createSong" ref="song_input" v-model="songTitle" placeholder="song title" >
     <button v-on:click="createSong">Create</button>
   </div>
