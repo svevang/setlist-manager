@@ -3,9 +3,10 @@
       <h3>🎸 Setlist Manager</h3>
     <div class="column">
       <SongCreate/>
-    </div>
-    <div class="column">
       <SongList v-bind:songs="songs" />
+    </div>
+    <div  class="column">
+      <SetlistCreate v-bind:songs="songs" />
     </div>
   </div>
 </template>
@@ -15,6 +16,7 @@ import Vue from "vue";
 import { mapState } from 'vuex'
 
 import SongCreate from "./SongCreate.vue"
+import SetlistCreate from "./SetlistCreate.vue"
 import SongList from "./SongList.vue"
 
 export default {
@@ -23,6 +25,7 @@ export default {
     }
   },
   components: {
+    SetlistCreate,
     SongCreate,
     SongList,
   },
